@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus pedidos | House Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+<div class="pagina">
+  <header class="cabecalho">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pedidos.html" class="ativo">Pedidos</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <span class="espaco"></span>
+    <input class="busca-topo" type="search" placeholder="Buscar burguers, batatas..." aria-label="Buscar produtos">
+    <a class="botao contorno" href="perfil.html">Ana</a>
+    <a class="botao contorno" href="index.html">Sair</a>
+    <a class="link-carrinho" href="carrinho.html">Carrinho (0)</a>
+  </header>
+
+  <main class="conteudo">
+    <h1 class="titulo-pagina">Meus pedidos</h1>
+    <input class="busca-pagina" type="search" placeholder="Buscar pedido por número ou item" aria-label="Buscar pedidos">
+    <div class="grade-pedidos">
+      <article class="pedido"><div class="pedido-topo"><strong>#1003</strong><span class="situacao">Recebido</span></div><small>02/11/2026 12:10 · Entrega</small><p>1× Classic Cheeseburger<br>2× Batata Frita<br>1× Milk-shake de chocolate</p><span class="valor">R$ 85,60</span></article>
+  <article class="pedido"><div class="pedido-topo"><strong>#1002</strong><span class="situacao">Recebido</span></div><small>28/10/2026 20:41 · Retirada no local</small><p>1× BBQ Bacon<br>1× Anéis de Cebola</p><span class="valor">R$ 53,80</span></article>
+  <article class="pedido"><div class="pedido-topo"><strong>#1001</strong><span class="situacao">Recebido</span></div><small>20/10/2026 19:05 · Entrega</small><p>1× Double Smash Cheddar</p><span class="valor">R$ 36,90</span></article>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <p>© 2026 House Burguer · [Endereço] · [Horário] · [WhatsApp]</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

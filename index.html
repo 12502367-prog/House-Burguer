@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hambúrguer artesanal | House Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="pagina">
+  <header class="cabecalho">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <span class="espaco"></span>
+    <input class="busca-topo" type="search" placeholder="Buscar burguers, batatas..." aria-label="Buscar produtos">
+    <a class="botao contorno" href="login.html">Entrar</a>
+    <a class="botao" href="cadastro.html">Cadastrar</a>
+    <a class="link-carrinho" href="carrinho.html">Carrinho (0)</a>
+  </header>
+
+  <section class="destaque">
+    <div class="destaque-texto">
+      <span class="etiqueta">ARTESANAL • FRESCO • IRRESISTÍVEL</span>
+      <h1>Seu próximo burger favorito está aqui.</h1>
+      <p class="subtitulo">Carne suculenta, queijo derretido e ingredientes selecionados em cada mordida.</p>
+      <div class="botoes">
+        <a class="botao" href="produtos.html">Pedir agora</a>
+        <a class="botao contorno" href="cadastro.html">Criar conta</a>
+      </div>
+    </div>
+    <div class="destaque-foto"><div class="pilha"><img class="camada-1" src="camada-1.png" alt=""><img class="camada-2" src="camada-2.png" alt=""><img class="camada-3" src="camada-3.png" alt=""><img class="camada-4" src="camada-4.png" alt=""><img class="camada-5" src="camada-5.png" alt=""><img class="camada-6" src="camada-6.png" alt=""><img class="camada-7" src="camada-7.png" alt=""></div></div>
+  </section>
+
+  <section class="conteudo">
+    <div class="titulo-linha"><h2>Os favoritos da casa</h2><button type="button" class="botao contorno" id="btnExportarJson" data-arquivo="produtos-favoritos.json">Exportar JSON</button></div>
+    <div class="grade-produtos">
+      <article class="cartao-produto">
+        <div class="foto-produto"><img src="classic.png" alt="Hambúrguer clássico"></div>
+        <div class="corpo-produto">
+          <h3>Classic Burger</h3>
+          <p class="descricao">Carne bovina, queijo, alface, tomate e molho especial.</p>
+          <span class="nota">★ 4.8</span>
+          <div class="linha-preco"><span class="preco">R$ 29,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Classic Burger">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="bacon.png" alt="BBQ Bacon"></div>
+        <div class="corpo-produto">
+          <h3>BBQ Bacon</h3>
+          <p class="descricao">Carne, cheddar, bacon crocante, barbecue e cebola.</p>
+          <span class="nota">★ 4.7</span>
+          <div class="linha-preco"><span class="preco">R$ 34,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar BBQ Bacon">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="crispy.png" alt="Crispy Chicken"></div>
+        <div class="corpo-produto">
+          <h3>Crispy Chicken</h3>
+          <p class="descricao">Frango crocante, alface, tomate e maionese especial.</p>
+          <span class="nota">★ 4.6</span>
+          <div class="linha-preco"><span class="preco">R$ 31,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Crispy Chicken">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="double.png" alt="Double Cheese"></div>
+        <div class="corpo-produto">
+          <h3>Double Cheese</h3>
+          <p class="descricao">Dois discos de carne, queijo duplo e molho da casa.</p>
+          <span class="nota">★ 4.9</span>
+          <div class="linha-preco"><span class="preco">R$ 39,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Double Cheese">+</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="faixa-escura">
+    <div class="conteudo">
+      <div class="titulo-linha"><h2>Nosso hambúrguer</h2><p>Camada por camada, até a mordida.</p></div>
+      <div class="camadas">
+        <div class="pilha"><img class="camada-1" src="rodape-camada-1.png" alt=""><img class="camada-2" src="rodape-camada-2.png" alt=""><img class="camada-3" src="rodape-camada-3.png" alt=""><img class="camada-4" src="rodape-camada-4.png" alt=""><img class="camada-5" src="rodape-camada-5.png" alt=""><img class="camada-6" src="rodape-camada-6.png" alt=""><img class="camada-7" src="rodape-camada-7.png" alt=""></div>
+        <ul class="lista-camadas">
+          <li><h3>Pão</h3><p>Macio e levemente tostado.</p></li>
+  <li><h3>Alface</h3><p>Fresca e crocante.</p></li>
+  <li><h3>Tomate e cebola</h3><p>Fatiados na hora.</p></li>
+  <li><h3>Molho da casa</h3><p>Cremoso e com personalidade.</p></li>
+  <li><h3>Queijo</h3><p>Derretido sobre a carne quente.</p></li>
+  <li><h3>Carne</h3><p>Suculenta e grelhada.</p></li>
+  <li><h3>Pão de baixo</h3><p>Base macia que sustenta o conjunto.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="diferenciais">
+    <div><h3>Ingredientes selecionados</h3><p>Produtos escolhidos para entregar mais sabor.</p></div>
+  <div><h3>Carne na brasa</h3><p>Preparada para manter suculência e textura.</p></div>
+  <div><h3>Molho da casa</h3><p>Receita própria que diferencia os burgers.</p></div>
+  <div><h3>Preparado na hora</h3><p>Pedido feito com cuidado e atenção.</p></div>
+  </section>
+
+  <footer class="rodape">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <p>© 2026 House Burguer · [Endereço] · [Horário] · [WhatsApp]</p>
+  </footer>
+</div>
+<script src="exportar-json.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

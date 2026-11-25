@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos - Acompanhamentos | House Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="produtos-acompanhamentos.css">
+</head>
+<body>
+<div class="pagina">
+  <header class="cabecalho">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="produtos.html" class="ativo">Produtos</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <span class="espaco"></span>
+    <input class="busca-topo" type="search" placeholder="Buscar burguers, batatas..." aria-label="Buscar produtos">
+    <a class="botao contorno" href="login.html">Entrar</a>
+    <a class="botao" href="cadastro.html">Cadastrar</a>
+    <a class="link-carrinho" href="carrinho.html">Carrinho (0)</a>
+  </header>
+
+  <main class="conteudo">
+    <div class="titulo-linha"><h1>Produtos</h1><button type="button" class="botao contorno" id="btnExportarJson" data-arquivo="produtos-acompanhamentos.json" style="cursor:pointer">Exportar JSON</button></div>
+    <input class="busca-pagina" type="search" placeholder="Buscar por nome ou ingrediente" aria-label="Buscar produtos">
+    <nav class="abas" aria-label="Categorias"><a class="aba" href="produtos.html">Hambúrgueres</a><a class="aba ativa" href="produtos-acompanhamentos.html">Acompanhamentos</a><a class="aba" href="produtos-bebidas.html">Bebidas</a></nav>
+    <div class="grade-produtos">
+      <article class="cartao-produto">
+        <div class="foto-produto"><img src="batata_frita.jpg"></div>
+        <div class="corpo-produto">
+          <h3>Batata Frita</h3>
+          <p class="descricao">Porção crocante com sal marinho e ketchup.</p>
+          <span class="nota">★ 4.7</span>
+          <div class="linha-preco"><span class="preco">R$ 16,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Batata Frita">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="batata_com_cheddar_bacon.jpg"></div>
+        <div class="corpo-produto">
+          <h3>Batata Cheddar e Bacon</h3>
+          <p class="descricao">Coberta de cheddar cremoso, bacon e cebolinha.</p>
+          <span class="nota">★ 4.9</span>
+          <div class="linha-preco"><span class="preco">R$ 24,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Batata Cheddar e Bacon">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="aneis_de_cebola.jpg"></div>
+        <div class="corpo-produto">
+          <h3>Anéis de Cebola</h3>
+          <p class="descricao">Empanados e dourados, com molho cremoso.</p>
+          <span class="nota">★ 4.6</span>
+          <div class="linha-preco"><span class="preco">R$ 18,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Anéis de Cebola">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="bolinhas_de_queijo.jpg"></div>
+        <div class="corpo-produto">
+          <h3>Mac & Cheese Bites</h3>
+          <p class="descricao">Bolinhas crocantes recheadas de queijo.</p>
+          <span class="nota">★ 4.8</span>
+          <div class="linha-preco"><span class="preco">R$ 22,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Mac & Cheese Bites">+</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <p>© 2026 House Burguer · [Endereço] · [Horário] · [WhatsApp]</p>
+  </footer>
+</div>
+<script src="exportar-json.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

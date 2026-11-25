@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos - Hambúrgueres | House Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+<div class="pagina">
+  <header class="cabecalho">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="produtos.html" class="ativo">Produtos</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <span class="espaco"></span>
+    <input class="busca-topo" type="search" placeholder="Buscar burguers, batatas..." aria-label="Buscar produtos">
+    <a class="botao contorno" href="login.html">Entrar</a>
+    <a class="botao" href="cadastro.html">Cadastrar</a>
+    <a class="link-carrinho" href="carrinho.html">Carrinho (0)</a>
+  </header>
+
+  <main class="conteudo">
+    <div class="titulo-linha"><h1>Produtos</h1><button type="button" class="botao contorno" id="btnExportarJson" data-arquivo="produtos-hamburgueres.json" style="cursor:pointer">Exportar JSON</button></div>
+    <input class="busca-pagina" type="search" placeholder="Buscar por nome ou ingrediente" aria-label="Buscar produtos">
+    <nav class="abas" aria-label="Categorias"><a class="aba ativa" href="produtos.html">Hambúrgueres</a><a class="aba" href="produtos-acompanhamentos.html">Acompanhamentos</a><a class="aba" href="produtos-bebidas.html">Bebidas</a></nav>
+    <div class="grade-produtos">
+      <article class="cartao-produto">
+        <div class="foto-produto"><img src="classic_burguer.png" alt="Classic Cheeseburger"></div>
+        <div class="corpo-produto">
+          <h3>Classic Cheeseburger</h3>
+          <p class="descricao">Carne, queijo americano, alface, tomate, picles e molho da casa.</p>
+          <span class="nota">★ 4.8</span>
+          <div class="linha-preco"><span class="preco">R$ 29,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Classic Cheeseburger">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="bacon.png" alt="BBQ Bacon"></div>
+        <div class="corpo-produto">
+          <h3>BBQ Bacon</h3>
+          <p class="descricao">Carne, cheddar, bacon crocante, cebola caramelizada e barbecue.</p>
+          <span class="nota">★ 4.7</span>
+          <div class="linha-preco"><span class="preco">R$ 34,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar BBQ Bacon">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="double.png"></div>
+        <div class="corpo-produto">
+          <h3>Double Smash Cheddar</h3>
+          <p class="descricao">Dois smash, cheddar derretido e cebola picada.</p>
+          <span class="nota">★ 4.9</span>
+          <div class="linha-preco"><span class="preco">R$ 36,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Double Smash Cheddar">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="crispy.png" alt="Crispy Chicken"></div>
+        <div class="corpo-produto">
+          <h3>Crispy Chicken</h3>
+          <p class="descricao">Frango crocante, alface, tomate e maionese.</p>
+          <span class="nota">★ 4.6</span>
+          <div class="linha-preco"><span class="preco">R$ 31,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Crispy Chicken">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="blue.png" alt="Blue Cheese"></div>
+        <div class="corpo-produto">
+          <h3>Blue Cheese</h3>
+          <p class="descricao">Carne, gorgonzola, cebola caramelizada e rúcula.</p>
+          <span class="nota">★ 4.7</span>
+          <div class="linha-preco"><span class="preco">R$ 38,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Blue Cheese">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="cogumelos.png"></div>
+        <div class="corpo-produto">
+          <h3>Cogumelos & Suíço</h3>
+          <p class="descricao">Carne, cogumelos salteados, queijo suíço e aioli.</p>
+          <span class="nota">★ 4.6</span>
+          <div class="linha-preco"><span class="preco">R$ 37,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Cogumelos & Suíço">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="jalapeno.png"></div>
+        <div class="corpo-produto">
+          <h3>Jalapeño Pepper Jack</h3>
+          <p class="descricao">Carne, pepper jack, jalapeño e molho chipotle.</p>
+          <span class="nota">★ 4.8</span>
+          <div class="linha-preco"><span class="preco">R$ 35,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Jalapeño Pepper Jack">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="egg.png"></div>
+        <div class="corpo-produto">
+          <h3>Fried Egg</h3>
+          <p class="descricao">Carne, ovo com gema mole, bacon e cheddar.</p>
+          <span class="nota">★ 4.8</span>
+          <div class="linha-preco"><span class="preco">R$ 36,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Fried Egg">+</a></div>
+        </div>
+      </article>
+  <article class="cartao-produto">
+        <div class="foto-produto"><img src="onion.png"></div>
+        <div class="corpo-produto">
+          <h3>Onion Ring Burger</h3>
+          <p class="descricao">Carne, cheddar, anel de cebola e molho BBQ.</p>
+          <span class="nota">★ 4.7</span>
+          <div class="linha-preco"><span class="preco">R$ 37,90</span><a class="botao-mais" href="carrinho.html" aria-label="Adicionar Onion Ring Burger">+</a></div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <p>© 2026 House Burguer · [Endereço] · [Horário] · [WhatsApp]</p>
+  </footer>
+</div>
+<script src="exportar-json.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

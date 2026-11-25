@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu perfil | House Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+<div class="pagina">
+  <header class="cabecalho">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="pedidos.html">Pedidos</a>
+      <a href="perfil.html" class="ativo">Perfil</a>
+    </nav>
+    <span class="espaco"></span>
+    <input class="busca-topo" type="search" placeholder="Buscar burguers, batatas..." aria-label="Buscar produtos">
+    <a class="botao contorno" href="perfil.html">Ana</a>
+    <a class="botao contorno" href="index.html">Sair</a>
+    <a class="link-carrinho" href="carrinho.html">Carrinho (0)</a>
+  </header>
+
+  <main class="conteudo">
+    <h1 class="titulo-pagina">Meu perfil</h1>
+    <div class="duas-colunas">
+      <form class="formulario" action="perfil.html">
+        <label class="campo">Nome<input value="Ana Silva"></label>
+        <label class="campo">E-mail<input value="ana@email.com"></label>
+        <label class="campo">Telefone<input value="(31) 99999-9999"></label>
+        <label class="campo">Endereço de entrega<input value="Rua Exemplo, 123, Belo Horizonte"></label>
+        <div class="botoes">
+          <a class="botao" href="perfil.html">Salvar dados</a>
+          <a class="botao contorno" href="index.html">Sair da conta</a>
+        </div>
+      </form>
+      <aside class="conta">
+        <h2>Sua conta</h2>
+        <p>Pedidos feitos: 3</p>
+        <small>Os dados ficam salvos só neste aparelho (demonstração).</small>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <a class="logo" href="index.html">House<b>.</b>Burguer</a>
+    <p>© 2026 House Burguer · [Endereço] · [Horário] · [WhatsApp]</p>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
